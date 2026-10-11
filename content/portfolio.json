@@ -1,0 +1,182 @@
+{
+  "updated": "2026-10-12",
+  "latestUpdate": "核对实习经历，改善手机导航与联系入口",
+  "person": {
+    "name": "王源庆",
+    "initials": "YQ",
+    "role": "AI 产品经理 / AI 应用开发实习",
+    "intro": "我把用户问题写成能验收的需求，再用 AI 辅助实现和本地验证把产品推进一步。",
+    "education": "北京邮电大学 · 光电信息工程 · 本科（预计 2028 年毕业）",
+    "availability": "寻找 AI 产品与应用方向实习",
+    "exploring": "也关注 FDE 与大模型应用方向。",
+    "email": "1345137372@qq.com"
+  },
+  "projects": [
+    {
+      "slug": "lingan",
+      "name": "零橄",
+      "displayTitle": "让训练目标因人而异",
+      "exhibitLine": "同一场训练，为什么每个人需要不同的角色与完成标准？",
+      "coverType": "screens",
+      "coverImages": [
+        {
+          "src": "assets/lingan-home.png",
+          "alt": "零橄小程序首页真实截图，显示今天练什么和训练入口",
+          "label": "首页 · 真实界面"
+        },
+        {
+          "src": "assets/lingan-group.png",
+          "alt": "零橄小组训练控制台真实截图，显示共同目标与个人角色",
+          "label": "小组训练 · 真实界面"
+        }
+      ],
+      "category": "产品定义 · PRD · AI 辅助开发",
+      "lead": "触式橄榄球训练助手：把个人和小组训练中的选择，写成能解释、能检查的规则。",
+      "cardProblem": "混合水平训练如何避免统一平均难度",
+      "cardContribution": "定义 BR-012 / AC-008，推进小程序原型",
+      "cardArtifact": "PRD 规则片段 + 真实界面",
+      "cardValidation": "本地逻辑验证；真实训练效果未验证",
+      "status": "个人项目 / 本地逻辑验证",
+      "role": "我定义训练场景、规则与验收条件，并用 AI 辅助推进小程序原型和逻辑实现。",
+      "question": "3 人水平不同，却要共同完成 2v1 训练。若统一采用平均难度，如何避免新手被推到过难任务、熟练者又得不到训练？",
+      "decision": "共同目标保持一致；每位成员分别配置角色、难度和完成标准。规则 BR-012 明确禁止用平均水平统一难度。",
+      "why": "平均值抹掉成员之间的能力差异，难以解释每个人为什么拿到当前任务；分层规则让训练目标和个人负荷同时可追溯。",
+      "artifact": {
+        "type": "prd",
+        "label": "可查看的 PRD 决策片段",
+        "title": "混合水平小组的规则与验收",
+        "source": "零橄 V2.1-R1 PRD 评审稿 · BR-012 / AC-008",
+        "rows": [
+          {
+            "label": "场景",
+            "value": "3 人混合水平，生成 2v1 小组计划。"
+          },
+          {
+            "label": "规则 BR-012",
+            "value": "成员水平不同，则分别生成角色难度与标准；不得计算平均水平统一难度。"
+          },
+          {
+            "label": "验收 AC-008",
+            "value": "共同目标一致；每人角色、难度、标准不同；不使用平均水平。"
+          },
+          {
+            "label": "验证状态",
+            "value": "现有本地小组逻辑校验覆盖该规则；真机体验与真实小组效果仍待验证。"
+          }
+        ]
+      },
+      "evidence": [
+        "两轮共 9 份真实问卷提供方向信号；受访者主要有训练经验，不能据此证明零基础用户效果。",
+        "V2.1-R1 PRD 有场景、业务规则、异常与验收编号；此处只展示可公开的脱敏片段。",
+        "小组训练核心逻辑有本地脚本验证；不能推断真实用户留存或训练效果。"
+      ],
+      "buildLoop": [
+        "先写共同目标、个人角色和安全边界，再拆成生成与执行逻辑。",
+        "用 AI 辅助编码和界面迭代；对照 BR-012、AC-008 检查是否偷换成平均难度。",
+        "通过本地脚本与人工审阅验收逻辑；真机和真实训练场景留在下一轮。"
+      ],
+      "image": "assets/lingan-group.png",
+      "previewAlt": "零橄小组训练控制台截图节选，显示本轮共同目标",
+      "imageAlt": "零橄小组训练控制台真实项目截图，显示共同目标与成员个人角色",
+      "imageCaption": "现有小程序界面截图。共同目标在上、个人角色在下；截图只说明界面状态，不证明实际训练效果。",
+      "limits": "训练计划和复盘由规则引擎主导；GPT 问答尚未完成云端部署验证。这里展示的是产品设计和本地实现，不声称正式上线或取得用户增长。",
+      "tags": [
+        "PRD",
+        "验收设计",
+        "规则引擎",
+        "微信小程序"
+      ]
+    },
+    {
+      "slug": "workbench",
+      "name": "AI Workbench",
+      "displayTitle": "让发送范围被看见",
+      "exhibitLine": "本地笔记交给模型之前，用户能否先看清将发送什么？",
+      "coverType": "flow",
+      "coverImages": [],
+      "category": "AI 应用 · 本地知识 · 人在回路",
+      "lead": "让本地 Markdown 知识参与模型问答，同时让用户看见、决定哪些片段会发给模型。",
+      "cardProblem": "笔记送模型前，用户如何确认发送范围",
+      "cardContribution": "参与产品定义、验收及模型 API 接入",
+      "cardArtifact": "KnowledgeWorkspace.tsx 真实源码节选",
+      "cardValidation": "代码路径核对；当前 API 未实测",
+      "status": "个人项目 / 本地代码路径已核对",
+      "role": "我参与产品定义与验收，并确认参与模型 API 接入；具体代码贡献仍在逐项核对。",
+      "question": "本地笔记进入模型上下文时，如何避免用户在不知道发送范围的情况下把整库内容交出去？",
+      "decision": "先本地检索并选取最多 5 篇笔记片段；展示文档、模型和字符数；用户确认后才调用模型，回答保留来源引用。",
+      "why": "发送前预览把数据外传从隐式动作变成可见决定；来源引用让用户能回到原笔记核对。",
+      "artifact": {
+        "type": "flow",
+        "label": "本地源码节选与实现路径",
+        "title": "发送前确认：检索上限、确认入口与模型调用",
+        "source": "KnowledgeWorkspace.tsx:153–224 · 本地源码原文片段；原仓库未在本站公开",
+        "steps": [
+          "本地检索",
+          "最多 5 篇笔记",
+          "确认发送范围",
+          "模型回答与来源"
+        ],
+        "quotes": [
+          {
+            "label": "检索与上限",
+            "location": "153–154",
+            "code": "const results = await searchKnowledge({ query: question });\nconst documents = results.documents.slice(0, 5);"
+          },
+          {
+            "label": "预览发送范围",
+            "location": "224",
+            "code": "<strong>发送前确认</strong><span>{askPreview.provider} · {askPreview.model}</span>\n<p>将发送 {askPreview.documents.length} 篇文档的选定片段，共约 {askPreview.charCount} 个字符。不会发送其他笔记。</p>"
+          },
+          {
+            "label": "确认入口",
+            "location": "224",
+            "code": "<button className=\"solid-button\" onClick={() => void confirmKnowledgeQuestion()} disabled={askBusy}>确认发送</button>"
+          },
+          {
+            "label": "确认后调用模型",
+            "location": "186",
+            "code": "const completion = await llmApi.chatCompletion(["
+          }
+        ],
+        "note": "上方是本地组件真实源码的摘录，省略上下文和缩进；预览片段来自同一源码行，不是产品截图。四步图依据代码整理。原仓库未公开，个人编码贡献及当前 API 连通性、回答质量仍待核对。"
+      },
+      "evidence": [
+        "现有组件包含本地检索、选取最多 5 篇、发送前确认、模型调用与来源按钮的代码路径。",
+        "Markdown / Obsidian 保存知识正文；网页预览不获得本地文件权限。",
+        "尚未在本轮发起真实 API 请求，不能声称当前在线连通率或线上稳定性。"
+      ],
+      "buildLoop": [
+        "先划定本地知识正文和模型请求的边界，明确发送前必须有人确认。",
+        "用 AI 辅助推进界面与调用链；对照源码检查预览状态与确认动作是否分离。",
+        "按代码路径、本地构建与界面状态验证；真实模型调用质量需另行评测。"
+      ],
+      "image": null,
+      "imageAlt": null,
+      "imageCaption": null,
+      "limits": "这是一条本地实现链路，不代表现时 API 可用、模型回答准确或已有外部用户。个人编码贡献待逐项核对；不把整个系统表述为独立手写。",
+      "tags": [
+        "AI 应用",
+        "本地检索",
+        "发送前确认",
+        "来源引用"
+      ],
+      "heroImages": [
+        {
+          "src": "assets/workbench-today.png",
+          "alt": "AI Workbench 今天页面的历史视觉测试截图，显示空状态和专注计时",
+          "label": "今天 · 测试预览"
+        },
+        {
+          "src": "assets/workbench-learning.png",
+          "alt": "AI Workbench 学习与知识页面的历史视觉测试截图，显示空状态学习条目",
+          "label": "学习与知识 · 测试预览"
+        }
+      ]
+    }
+  ],
+  "experience": {
+    "title": "AI 硬件产品实习",
+    "period": "2026.07 — 至今",
+    "description": "负责 Talulu 市场与竞品分析、FUFUBOT 配套小程序 PRD 板块，形成22项编号需求及优先级、验收与隐私规则；比较多种音效生成方法，综合效果与成本选择 MiniMax 拟声词方案；对接外部制作团队完成 Talulu 短剧素材交接、验收与多平台运营，短剧已上线。"
+  }
+}

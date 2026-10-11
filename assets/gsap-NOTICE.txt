@@ -1,0 +1,6 @@
+GSAP Core 3.15.0 (dist/gsap.min.js)
+Source: https://www.npmjs.com/package/gsap/v/3.15.0
+Upstream: https://github.com/greensock/GSAP
+License: GreenSock Standard "no charge" License
+License terms: https://gsap.com/standard-license/
+This site self-hosts the unmodified minified core. No GSAP plugins are included.
